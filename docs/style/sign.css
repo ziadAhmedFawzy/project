@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+.container {
+    min-height: 500px;
+    font-family: "Cairo";
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+}
+
+body {
+    background-color: #bd6500;
+}
+
+.container .parent {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    border: 1px solid #16161657;
+}
+
+.container .parent .ch {
+    width: 50%;
+    padding: 20px;
+}
+
+.container .parent .child2 {
+    background-color: #814d11;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.container .parent .child2 div input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.container .parent .child2 div input:focus {
+    outline: none;
+}
+
+.container .parent .child2 div button {
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0;
+    background-color: #fcb86b;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.container .parent .child2 p {
+    color: #ff8383;
+}
+
+.container .parent .child2 div button:hover {
+    background-color: #a16725;
+    color: #fff;
+}
+
+.container .parent .child2 h3 {
+    width: fit-content;
+    position: relative;
+}
+
+.container .parent .child2 h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    animation-name: moveLine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveLine {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+.container .parent .child1 {
+    background-color: #61390a;
+    color: #fff;
+    cursor: default;
+
+}
+
+.container .parent .child1 img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.container .parent h2 {
+    font-size: 55px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin: 10px 0;
+}
+
+.container .parent ul {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.container .parent ul li {
+    font-weight: bold;
+    cursor: default;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.container .parent ul li i {
+    margin: 0 10px;
+}
+
+/* login */
+.child2-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.child2-flex h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}

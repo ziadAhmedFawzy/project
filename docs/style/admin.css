@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo";
+    background-color: #814d11;
+}
+
+.parent {
+    display: flex;
+    padding: 10px;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #311d05;
+    color: #fff;
+    overflow: auto;
+}
+
+.form button {
+    padding: 10px;
+    margin: 10px 0;
+    float: right;
+    background-color: #cca374;
+    cursor: pointer;
+    border: none;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #814d11;
+    color: #fff;
+    font-size: 12px;
+    transition-duration: 0.2s;
+}
+
+.header a:hover {
+    background-color: #e67700e1;
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+.form div input,
+.form div textarea,
+.form div select {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #cca374;
+}
+
+.form div textarea {
+    max-width: 630px !important;
+    max-height: 300px !important;
+}
+
+.form .price {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.form .price p {
+    margin-top: 30px;
+    width: 100px;
+    padding: 5px 15px;
+    background-color: #583104;
+}
+
+.form .price div {
+    margin: 0 10px 0 0;
+}
+
+.form .price div input {
+    width: 90%;
+}
+
+.form div input:focus,
+.form div textarea:focus,
+.form div select:focus {
+    outline: none;
+}
+
+.form div input::placeholder,
+.form div textarea::placeholder,
+.form div select::placeholder {
+    color: #eee;
+}
+
+
+.form div select option {
+    background-color: #583104;
+    color: #fff;
+}
+
+.parent .control {
+    width: 70%;
+    background-color: #311d05;
+    display: flex;
+    color: #fff;
+    flex-flow: column wrap;
+}
+
+.parent .control .order {
+    height: 50%;
+    padding: 10px;
+    background-color: #583104;
+    overflow: auto;
+}
+
+.parent .control .products {
+    overflow: auto;
+}
+
+.parent .control .products {
+    padding: 10px;
+    height: 50%;
+    background-color: #7e674c;
+}
+
+.parent .control .order h2,
+.parent .control .products h2 {
+    text-transform: uppercase;
+}
+
+.parent table {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.parent table tbody tr {
+    background-color: #311d056b;
+}
+
+.parent table tbody button {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.parent table tbody .editing {
+    background-color: #2081ff;
+}
+
+.parent table tbody .editing:hover {
+    background-color: #15509e;
+}
+
+.parent table tbody .deleting {
+    background-color: #ff5d5d;
+}
+
+.parent table tbody .deleting:hover {
+    background-color: #8d2323;
+}
+
+.not-empty {
+    background-color: #83ff83 !important;
+}
+
+.empty {
+    background-color: #ff5d5d !important;
+}
+
+.add-img {
+    margin: 10px 0;
+    height: 100px;
+    border: 3px dashed #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.add-img:hover {
+    color: #8d2323;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px dotted #cc0000c5;
+}

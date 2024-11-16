@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "cairo";
+}
+
+:root {
+    --mainColor: #fff;
+    --mainColor2: #e4e4e4;
+    --secondaryColor: #222;
+    --secondaryColor2: #333333;
+    --lastColor: #bd6500;
+    --lastColor2: #814d11;
+    --lastColor3: #61390a;
+}
+
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    color: var(--mainColor);
+}
+
+.info a {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--mainColor);
+    transition-duration: 0.2s;
+}
+
+.info a:hover {
+    transform: scale(1.1);
+}
+
+.info div span {
+    margin: 0 10px;
+    cursor: default;
+}
+
+.content-info {
+    background-color: var(--lastColor);
+    padding: 10px;
+}
+
+.content-info .info {
+    margin: 10px;
+}
+
+.content-info .info .icons-to-access button {
+    background-color: transparent;
+    border: none;
+    color: var(--mainColor);
+    
+} 
+.content-info .info .icons-to-access button i {
+    font-size: 20px;
+}
+
+.content-info .info .icons-to-access .acc {
+    padding: 5px 15px;
+    color: var(--lastColor2);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--mainColor);
+    transition-duration: 0.2s;
+}
+
+.content-info .info .icons-to-access .acc:hover {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--lastColor2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+header h1 img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+header .search-space {
+    width: 40%;
+    position: relative;
+}
+
+header .search-space input {
+    width: 99%;
+    padding: 10px;
+    border: none;
+    background-color: var(--lastColor3);
+    color: var(--mainColor);
+}
+
+header .search-space input::placeholder {
+    color: var(--mainColor);
+}
+
+header .search-space input:focus {
+    outline: none;
+}
+
+header .search-space button {
+    position: absolute;
+    top: 30%;
+    right: 1px;
+    background-color: transparent;
+    border: none;
+    color: var(--mainColor);
+}
+
+header .fav-chart button {
+    margin: 0 10px;
+    background-color: transparent;
+    color: var(--mainColor);
+    border: none;
+    position: relative;
+    font-size: 20px;
+}
+
+.chart {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart .parent {
+    width: 75%;
+}
+
+.chart .parent .cardChart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #9c9c9c75;
+}
+
+.chart .parent h2 {
+    padding: 10px;
+
+}
+
+.chart .parent .cardChart .part-left {
+    display: flex;
+}
+
+.chart .cardChart .part-left .img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-size: cover;
+    border: 1px solid #0000003f;
+    background-image: url('../products/4lu-Slim-Organizer-Set-2-1249x1248.jpg');
+}
+
+.chart .cardChart .part-left .infos h3 {
+    font-size: 20px;
+    width: 500px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+
+.chart .cardChart .part-right {
+    font-size: 20px;
+}
+
+.chart-space {
+    height: 500px;
+    overflow: auto;
+}
+
+.infos_client {
+    width: 25%;
+}
+
+.infos_client .box1 p {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.infos_client .box1,
+.infos_client form {
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    background-color: #fff;
+} 
+
+.infos_client .box1 p span {
+    font-weight: bold;
+}
+
+.infos_client form {
+    text-align: left;
+}
+
+.infos_client form div input,select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.infos_client form div input:focus,select:focus {
+    outline: none;
+}
+
+.infos_client form h4 {
+    text-transform: uppercase;
+}
+
+.infos_client form button {
+    width: 95%;
+    margin: 10px 2.5%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #61390a;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.infos_client form button:hover {
+    background-color: #c96b00;
+}

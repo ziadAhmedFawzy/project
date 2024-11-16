@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awfarlk - Chart</title>
+    <link rel="stylesheet" href="../docs/style/chart.css">
+    <link rel="icon" href="../docs/logo/awfarlk.png">
+</head>
+<body>
+    <div class="content-info">
+        <div class="info">
+            <div>
+                <span><i class="fa-regular fa-envelope"></i> mainAwfarlk1@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +20 000000000</span>
+            </div>
+            <div class="icons-to-access">
+                <a target="_blank" href="https://maps.app.goo.gl/2K9BNRW4QgkG1HaE9">location <i class="fa-solid fa-location-dot"></i></a>
+                <div style="display: inline-block; margin: 0 20px;" id="acc">
+                    <div style="display: inline-block; margin: 0 10px; cursor: default;" id="user"></div>
+                    <button class="out hidden" id="logout">logout <i class="fa-solid fa-angles-right"></i></button>
+                    <a id="sign" class="acc" href="./pages/sign.html"><i class="fa-regular fa-user"></i> sign</a>
+                    <a id="login" class="acc" href="./pages/login.html"><i class="fa-regular fa-user"></i> login</a>
+                </div>
+                <button id="light" class="hidden"><i class="fa-regular fa-sun"></i></button>
+                <button id="dark"><i class="fa-regular fa-moon"></i></button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!-- logo -->
+        <h1><img width="70px" src="../docs/logo/awfarlk1.png" />Awfarlk</h1>
+        <div class="search-space">
+            <input type="text" placeholder="search your product" name="search_inp" id="SI">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="fav-chart">
+            <button id="favBTN" class="fav"><i class="fa-solid fa-heart"></i></button>
+            <button id="chartBTN" class="chart"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </header>
+    <div class="chart">
+        <div class="parent">
+            <h2>shopping chart</h2>
+            <div class="chart-space" id="CHART_SPACE">
+                
+            </div>
+        </div>
+        <div class="infos_client">
+            <div class="box1">
+                <p>Subtotal (1 item): <span id="totalCashCart"></span></p>
+            </div>
+            <form>
+                <h4>information client</h4>
+                <div>
+                    <label for="fullName">full name</label>
+                    <input id="fullName" disabled type="text" />
+                </div>
+                <div>
+                    <label for="Email">email</label>
+                    <input id="Email" disabled type="text" />
+                </div>
+                <div>
+                    <label>address</label>
+                    <input id="address" type="text" />
+                </div>
+                <label>payment method</label>
+                <select id="payment">
+                    <option selected disabled>payment method</option>
+                    <option value="cash">cash</option>
+                    <option value="visa">visa</option>
+                </select>
+                <button id="signClient">buy now</button>
+            </form>
+        </div>
+    </div>
+    <script src="../docs/script/chart.js"></script>
+</body>
+</html>

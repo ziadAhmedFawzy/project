@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-page-of-Awfarlk</title>
+    <link rel="icon" href="../docs/logo/awfarlk.png">
+    <link rel="stylesheet" href="../docs/style/admin.css">
+</head>
+<body>
+    <div class="contanier">
+        <div class="parent">
+            <div class="form">
+                <div class="header">
+                    <h2>product info</h2>
+                    <a href="../index.html">Logout</a>
+                </div>
+                <div>
+                    <label for="namePro">name product</label>
+                    <input id="namePro" type="text" placeholder="enter name product" />
+                </div>
+                <div>
+                    <label for="descPro">description of product</label>
+                    <textarea id="descPro" placeholder="enter description of product"></textarea>
+                </div>
+                <div class="price">
+                    <div class="price">
+                        <div>
+                            <label for="pricePro">price</label>
+                            <input id="pricePro" type="number" placeholder="enter price" />
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <label for="discPro">discount</label>
+                            <input id="discPro" type="number" placeholder="enter disc (optional)" />
+                        </div>
+                    </div>
+                    <p id="box_total_price"><span id="totalPrice">0</span> EGP</p>
+                </div>
+                <div class="Category">
+                    <div class="Category">
+                        <label for="categories">Categories</label>
+                        <select id="Category">
+                            <!-- Electronics Category -->
+                            <option disabled>---electrical device---</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="mobile-phones">Mobile Phones</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="tablets">Tablets</option>
+                            <option value="cameras">Cameras</option>
+                            <option value="headphones">Headphones</option>
+                        
+                            <!-- Clothing Category -->
+                            <option disabled value="">---Clothing---</option>
+                            <option value="mens-clothing">Men's Clothing</option>
+                            <option value="womens-clothing">Women's Clothing</option>
+                            <option value="kids-clothing">Kids' Clothing</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="shoes">Shoes</option>
+                        
+                            <!-- Home Appliances Category -->
+                            <option disabled value="">---Home Appliances---</option>
+                            <option value="refrigerators">Refrigerators</option>
+                            <option value="washing-machines">Washing Machines</option>
+                            <option value="microwaves">Microwaves</option>
+                            <option value="air-conditioners">Air Conditioners</option>
+                            <option value="vacuum-cleaners">Vacuum Cleaners</option>
+                        
+                            <!-- Beauty & Personal Care Category -->
+                            <option disabled value="">---Beauty & Personal Care---</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="makeup">Makeup</option>
+                            <option value="hair-care">Hair Care</option>
+                            <option value="fragrances">Fragrances</option>
+                            <option value="personal-hygiene">Personal Hygiene</option>
+                        
+                            <!-- Sports & Outdoors Category -->
+                            <option disabled value="">---Sports & Outdoors---</option>
+                            <option value="fitness-equipment">Fitness Equipment</option>
+                            <option value="outdoor-gear">Outdoor Gear</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="footwear">Footwear</option>
+                            <option value="accessories">Accessories</option>
+                        
+                            <!-- Toys & Games Category -->
+                            <option disabled value="">---Toys & Games---</option>
+                            <option value="action-figures">Action Figures</option>
+                            <option value="puzzles">Puzzles</option>
+                            <option value="dolls">Dolls</option>
+                            <option value="board-games">Board Games</option>
+                            <option value="educational-toys">Educational Toys</option>
+                        
+                            <!-- Books Category -->
+                            <option disabled value="">---Books---</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="non-fiction">Non-Fiction</option>
+                            <option value="childrens-books">Children's Books</option>
+                            <option value="textbooks">Textbooks</option>
+                            <option value="comics">Comics</option>
+                        
+                            <!-- Grocery Category -->
+                            <option disabled value="">---Grocery---</option>
+                            <option value="fruits-vegetables">Fruits & Vegetables</option>
+                            <option value="dairy-products">Dairy Products</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="beverages">Beverages</option>
+                            <option value="frozen-foods">Frozen Foods</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <label fpr="search">seach</label>
+                    <input type="text" id="search" placeholder="seach to any proudct"/>
+                </div>
+                <div>
+                    <label class="add-img" for="img"><span id="fileName">ADD IMG</span></label>
+                    <input style="display: none;" type="file" id="img" required />
+                </div>
+                <button id="addProd">push newe product</button>
+                <button class="hidden" id="EditProd">update product</button>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="control">
+                <div class="order">
+                    <h2>orders</h2>
+                    <div class="monitor_orders">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>client</th>
+                                    <th>price</th>
+                                    <th>Email</th>
+                                    <th>address</th>
+                                    <th>status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="client">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>ziad</td>
+                                    <td>250$</td>
+                                    <td>2:00PM</td>
+                                    <td>25 A borhan, Helwan, cario</td>
+                                    <td>waiting</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ziad2</td>
+                                    <td>300$</td>
+                                    <td>12:18Am</td>
+                                    <td>new cario, boostan 25 B street rahman</td>
+                                    <td>received</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="products">
+                    <h2>products</h2>
+                    <table>
+                        <thead style="text-transform: uppercase;">
+                            <tr>
+                                <th>#id</th>
+                                <th>name</th>
+                                <th>price</th>
+                                <th>desc</th>
+                                <th>total</th>
+                                <th>Category</th>
+                                <th>img</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../docs/script/admin.js"></script>
+</body>
+</html>

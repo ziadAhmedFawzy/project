@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awfarlk</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="Awfarlk, buy, sell, بيع, شرا, free, offer">
+    <link rel="stylesheet" href="docs/style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- add icon to website -->
+    <link rel="icon" href="./docs/logo/awfarlk1.png">
+    <script src="https://kit.fontawesome.com/edb08315aa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="content-info">
+        <div class="info">
+            <div>
+                <span><i class="fa-regular fa-envelope"></i> mainAwfarlk1@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +20 000000000</span>
+            </div>
+            <div class="icons-to-access">
+                <a target="_blank" href="https://maps.app.goo.gl/2K9BNRW4QgkG1HaE9">location <i class="fa-solid fa-location-dot"></i></a>
+                <div style="display: inline-block; margin: 0 20px;" id="acc">
+                    <div style="display: inline-block; margin: 0 10px; cursor: default;" id="user"></div>
+                    <button class="out hidden" id="logout">logout <i class="fa-solid fa-angles-right"></i></button>
+                    <a id="sign" class="acc" href="./pages/sign.html"><i class="fa-regular fa-user"></i> sign</a>
+                    <a id="login" class="acc" href="./pages/login.html"><i class="fa-regular fa-user"></i> login</a>
+                </div>
+                <button id="light" class="hidden"><i class="fa-regular fa-sun"></i></button>
+                <button id="dark"><i class="fa-regular fa-moon"></i></button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!-- logo -->
+        <h1><img width="70px" src="docs/logo/awfarlk1.png" />Awfarlk</h1>
+        <div class="search-space">
+            <input type="text" placeholder="search your product" name="search_inp" id="SI">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="fav-chart">
+            <button id="favBTN" class="fav"><i class="fa-solid fa-heart"></i></button>
+            <button id="chartBTN" class="chart"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </header>
+    <!-- nav categories's website -->
+    <nav class="categories">
+        <li><a href="#">mobile</a></li>
+        <li><a href="#">electronics</a></li>
+        <li><a href="#">television</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">kitchen</a></li>
+    </nav>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div style="background-image: url('./docs/ads/arduion.jpg');" class="swiper-slide"></div>
+            <div style="background-image: url('./docs/ads/sample-3.jpg');" class="swiper-slide">
+                <img src="./docs/brands/shein.png" alt="shein">
+                <h2>Awfarlk is smashing prices for the upcoming Christmas holiday!</h2>
+            </div>
+            <div style="background-image: url('./docs/ads/sample-1.jpg');" class="swiper-slide">
+                <img src="./docs/brands/Sony-logo.png" alt="sony">
+                <h2>Unlock Superior Sound – 25% Off Sony Earpods Now on Awfarlk!</h2>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="advantage">
+       <div class="content">
+            <p><i class="fa-solid fa-van-shuttle"></i> easy to delivery</p>
+            <p><i class="fa-solid fa-money-bill"></i> Possibility of payment upon receipt</p>
+            <p><i class="fa-solid fa-headset"></i> 24 7 online support</p>
+            <p><i class="fa-solid fa-gift"></i> Best Special Gifts</p>
+       </div>
+    </div>
+    <div id="PRODUCTS_SPACE" class="prod-space"></div>
+    <div class="supporter">
+        <img src="docs/brands/proskit.webp" alt=""/>
+        <img src="docs/brands/raspberry-pi-logo-website.webp" alt=""/>
+        <img src="docs/brands/sanwa-logo.webp" alt=""/>
+        <img src="docs/brands/total.webp" alt=""/>
+        <img src="docs/brands/uni-t.webp" alt=""/>
+    </div>
+    <div class="join-news">
+        <div class="content-join-news">
+            <div class="ico-send">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <div class="text-join-news">
+                <h3>Join Our Newsletter, Get 10% Off</h3>
+                <p>Get all latest information on events, sales and offers</p>
+            </div>
+        </div>
+        <div class="inp-join-new">
+            <input type="text" placeholder="your email address" />
+            <button>push my email <i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <h4>contact us</h4>
+            <li>address: Egypt, Cairo, 20012AB AY2</li>
+            <li>phone: +20 000000000</li>
+            <li>email: mainAwfarlk1@gmail.com</li>
+        </ul>
+        <ul>
+            <h4>products</h4>
+            <li><a href="#">best sales</a></li>
+            <li><a href="#">new products</a></li>
+        </ul>
+        <ul>
+            <h4>our organization</h4>
+            <li><a href="#">delivery</a></li>
+            <li><a href="#"> Secure payment</a></li>
+            <li><a href="#">about us</a></li>
+        </ul>
+        <ul>
+            <h4>Trending Category</h4>
+                <li><a href="#">Camera Accessories</a></li> 
+                <li><a href="#">Gaming & Accessories</a></li> 
+                <li><a href="#">Headphone Cushions</a></li> 
+                <li><a href="#">Home Theatres</a></li> 
+                <li><a href="#">Microwave Ovens</a></li> 
+                <li><a href="#">Network Components</a></li> 
+                <li><a href="#">Refrigerators</a></li> 
+                <li><a href="#">Televisions</a></li> 
+        </ul>
+    </footer>
+    <div class="info2">
+        <p>&copy; 2025 - All rights reserved to Awfarlk</p>
+        <div class="payment-methods">
+            <a><img src="docs/paymod/fawry.jpg"/></a>
+            <a><img src="docs/paymod/instapay.png"/></a>
+            <a><img src="docs/paymod/paypal.png"/></a>
+            <a><img src="docs/paymod/vodafone.png"/></a>
+        </div>
+    </div>
+    <script src="docs/script/script.js"></script>
+</body>
+</html>
