@@ -37,7 +37,6 @@ body {
 .container .parent .child2 {
     background-color: #814d11;
     color: #fff;
-    text-transform: capitalize;
 }
 
 .container .parent .child2 div input {
@@ -129,7 +128,7 @@ body {
     font-weight: bold;
     cursor: default;
     margin: 10px 0;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .container .parent ul li i {
@@ -147,6 +146,6 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: lighter;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 5px;
 }
